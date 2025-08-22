@@ -1,21 +1,35 @@
 # Best McDonald’s Meals for Cutting or Bulking
 
-**Problem**  
-Fast food doesn’t have to derail your goals. This project analyzes McDonald’s nutrition data to find the best menu items for two scenarios: cutting (maximizing protein while minimizing calories) and bulking (maximizing both protein and calories for muscle growth). The result is a quick reference for making smarter choices when you’re short on time but still want to stay on track with your fitness!
+## Problem
+Fast food doesn’t have to derail your goals.  
+This project analyzes McDonald’s nutrition data to identify the best menu items for two scenarios:  
 
-**Data**  
+- **Cutting** → maximizing protein while minimizing calories.  
+- **Bulking** → maximizing both protein and calories for muscle growth.  
+
+The goal is to provide a quick reference for making smarter choices when you’re short on time but still want to stay on track with your fitness.  
+
+---
+
+## Data
 Source: McDonald’s nutrition CSV dataset
 
-**Method**
+---
 
-- Cleaning: Converted columns to proper types, removed unnecessary whitespace, standardized serving sizes, dropped invalid rows, and added calculated metrics.
-- Metrics:
-  - Cutting Score = protein / calories → higher values mean more protein per calorie.
-  - Bulking Score = protein \* log(calories) → balances protein content with calorie intake for mass gain.
-- Ranking: Sorted items by each score and extracted the top 5 results.
+## ⚙Method
+- **Cleaning**  
+  Converted columns to proper types, removed unnecessary whitespace, standardized serving sizes, dropped invalid rows, and added calculated metrics.  
 
-**Results**  
-The top-ranked items for each scenario are saved in:
+- **Metrics**  
+  - *Cutting Score* = `protein / calories` → higher values mean more protein per calorie.  
+  - *Bulking Score* = `protein * log(calories)` → balances protein content with calorie intake.  
 
-- top_cutting.csv → best choices for cutting.
-- top_bulking.csv → best choices for bulking.
+- **Ranking**  
+  Sorted items by each score and extracted the top 5 results.  
+
+---
+
+## Results
+The top-ranked items for each scenario are saved in:  
+- `top_cutting.csv` → best choices for cutting.  
+- `top_bulking.csv` → best choices for bulking.  
