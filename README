@@ -12,11 +12,11 @@ The goal is to provide a quick reference for making smarter choices when you’r
 ---
 
 ## Data
-Source: McDonald’s nutrition CSV dataset
+Source: McDonald’s nutrition CSV dataset.  
 
 ---
 
-## ⚙Method
+## Method
 - **Cleaning**  
   Converted columns to proper types, removed unnecessary whitespace, standardized serving sizes, dropped invalid rows, and added calculated metrics.  
 
